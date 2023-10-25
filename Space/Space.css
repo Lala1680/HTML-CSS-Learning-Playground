@@ -1,0 +1,41 @@
+body{
+    color: #82a5ca;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+#spacelogo{
+    width: 160px;
+
+}
+
+#id{
+     
+    text-shadow: -1px 1px 2px white;
+    
+}
+
+.sp{
+    background-image: url(https://media.giphy.com/media/jXUnAWw31KTzt7vyYH/giphy.gif);
+    background-size: cover;
+    padding: 10px 0 40px 0;
+
+}
+
+
+.but{
+    padding: 6px 12px;
+    background-color: white;
+    border: none;
+    font-family: inherit;  
+    color: #82a5ca;
+    font-weight: 900; 
+
+}
+
+.ex{
+    
+    border-bottom: 3px solid white;
+}
+
