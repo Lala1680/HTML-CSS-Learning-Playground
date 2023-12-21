@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8e875, #c4a6f5);
+            background-size: 100% 100%;
+            background-attachment: fixed; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #ff686b;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 12px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav a#contact-us {
+            background-image: url(menu-bar.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-right: 25px;
+        }
+
+        nav a:hover {
+            background-color: #ced4da;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: linear-gradient(to right, #f8e875, #c4a6f5);
+        }
+
+        .content {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .img{
+            width: 800px;
+            margin: 20px;
+            height: 600px;
+            background-image: url(pexels-robin-stickel-70497.jpg);
+            background-size: cover;
+            /* background-position: center; */
+        }
+
+        .image-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            object-fit: cover;
+            width: 300px;
+            height: 200px;
+            margin: 10px 20px 10px 10px;
+        }
+
+        .portrait {
+            width: 250px;
+            height: 420px;
+            margin-right: 20px;
+        }
+
+        #card {
+            height: 150px;
+            width: 375px;
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ff4d6d;
+            position: relative;
+        }
+
+        h4 {
+            margin: 0 0 10px;
+            font-weight: lighter;
+            font-size: smaller;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        #click-text {
+            position: absolute;
+            bottom: 10px;
+            font-size: small;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        #arrow-icon {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+        }
+
+        #click-text:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .h11 {
+            font-size: 2em;
+            margin: 0 0 50px 50px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0 50px 50px 50px;
+        }
+
+        button {
+            font-size: 10px;
+            padding: 12px 60px;
+            margin: 0 0 50px 50px;
+            background-color: #ff4d6d;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .group{
+            margin: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">Food</a>
+        <a href="#">Restaurant</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+        <a href="#" id="contact-us"></a>
+    </nav>
+</header>
+
+<section>
+    <div class="content">
+        <h1 class="h11">Simplotel Assignment</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et incidunt, ea ratione similique voluptatum reprehenderit numquam ipsam aut placeat architecto in beatae aliquid totam modi maiores? Accusamus quo modi quas nemo, natus praesentium et. Itaque sapiente repellat minus culpa doloremque ipsum, maxime distinctio amet iusto quis optio deleniti, eligendi ducimus!</p>
+        <button>Click Me</button>
+    </div>
+    <div class="img"></div>
+</section>
+ 
+<div class="group">
+
+    <div class="image-group">
+        <img class="image" src="pexels-eva-bronzini-6141651.jpg" alt="Landscape Image 1">
+        <img class="image" src="pexels-rachel-claire-6752433.jpg" alt="Landscape Image 2">
+    </div>
+<img class="portrait" src="pexels-mister-mister-3434523.jpg" alt="Portrait Image">
+
+<div id="card">
+    <h4>SIMPLOTEL</h4>
+    <h1>FRONT-END WEB DEVELOPER</h1>
+    <div id="click-text">
+        Click
+        <img id="arrow-icon" src="icons8-arrow-30.png" alt="Arrow Icon">
+    </div>
+</div>
+</div>
+
+</body>
+</html>
